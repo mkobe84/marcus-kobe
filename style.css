@@ -1,0 +1,30 @@
+*{
+    text-align: center;
+}
+body{
+    background-color:#4871afa0;
+}
+img{
+    border-radius: 5px ;
+    height: 200px;
+}
+h1{
+    color: white;
+}
+a:visited{
+    color: rgb(20, 20, 126);
+}
+.tabs:hover{
+    color: rgb(79, 79, 79);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.tabs{
+    font-size: medium;
+    padding: 30px;
+}
+*{
+    font-family:initial;
+}
