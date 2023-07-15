@@ -1,15 +1,18 @@
 *{
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 body{
-    background-color:#4871afa0;
+    background-color:slategray;
+    margin: 0;
+}
+h1{
+    color: white;
+    padding: 50px 50px 0px;
 }
 img{
     border-radius: 5px ;
     height: 200px;
-}
-h1{
-    color: white;
 }
 a:visited{
     color: rgb(20, 20, 126);
@@ -22,9 +25,29 @@ a{
     text-decoration: none;
 }
 .tabs{
-    font-size: medium;
-    padding: 30px;
+    font-size: small;
+
+    padding: 50px 50px 0px;
+
 }
-*{
-    font-family:initial;
+#page1{
+    background-color: white;
+    width: 100%;
+    padding: 40px 0px;
+}
+#page2{
+    background-color: white;
+    width: 100%;
+    padding: 40px 0px;
+}
+.titles{
+    color:royalblue;
+}
+#socials{
+    height: 30px;
+    padding: 5%;
+}
+#headers{
+    height: 340px;
+    width: 100%;
 }
