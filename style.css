@@ -7,7 +7,7 @@
 }
 body{
     font-family: 'Lato', sans-serif;
-    background-color: #81c995;
+    background-color: white;
     margin: 0;
 }
 
@@ -32,14 +32,14 @@ body{
 }
 
 .navs ul li a{
-    color: #F2E7D5;
+    color: white;
     font-size: 17px;
     font-weight: bold;
 }
 
 a.active, .t:hover{
     background: #adaed2;
-    transition: .10s;
+    transition: .5s;
     padding: 5px;
     border-radius: 5px;
 }
@@ -56,12 +56,17 @@ label.logo{
 
 /* opening screen*/
 #headers{
-    height: 720px;
-    width: 960px;
-    position:relative;
-    left: 20%;
-    top: 250px;
+    height: 100vh;
+    width: 100%;
+    color: #333;
     text-align: center;
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+#headers h1{
+    padding-top: 250px;
+    padding-bottom: 5px;
+    font-weight: 900px;
 }
 
 
@@ -81,29 +86,35 @@ a{
 
 /* projects */
 #projects h2{
-    background-color: #F2E7D5;
+    background-color: #81c995;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
     text-align: center;
     text-decoration: underline;
+    text-transform: lowercase;
+    color: white;
     padding: 0;
     margin: 0;
 }
 
 #page1{
-    background-color: #F2E7D5;
+    background-color: white;
     height: 80vh;
+    text-transform: lowercase;
     padding: 30px 10px;
     width: 100%;
     text-align: center;
 }
 .titles{
-    color: black;
+    color: #333;
 }
 
 /* socials bar*/
 #tab{
-    height: 10vh;
+    height: 80px;
     width: 100%;
-    background-color: #798777;
+    background-color: #333;
 }
 .contact{
     list-style: none;
