@@ -1,53 +1,140 @@
 *{
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 body{
-    background-color:#81c995;
+    font-family: 'Lato', sans-serif;
+    background-color: #81c995;
     margin: 0;
 }
-h1{
-    color: white;
-    padding: 50px 50px 0px;
+
+/* navigation bar*/
+.navs{
+    background-color: #81c995;
+    height: 80px;
+    width: 100%;
+    list-style: none;
 }
+
+.navs ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navs ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.navs ul li a{
+    color: #F2E7D5;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+a.active, .t:hover{
+    background: #adaed2;
+    transition: .10s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+label.logo{
+    color:#F2E7D5;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+
+/* opening screen*/
+#headers{
+    height: 720px;
+    width: 960px;
+    position:relative;
+    left: 20%;
+    top: 250px;
+    text-align: center;
+}
+
+
 img{
     border-radius: 5px ;
     height: 200px;
 }
 a:visited{
-    color: rgb(20, 20, 126);
-}
-.tabs:hover{
     color: rgb(79, 79, 79);
 }
+
 a{
     color: white;
     text-decoration: none;
 }
-.tabs{
-    font-size: small;
 
-    padding: 50px 50px 0px;
 
+/* projects */
+#projects h2{
+    background-color: #F2E7D5;
+    text-align: center;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
 }
+
 #page1{
-    background-color: white;
+    background-color: #F2E7D5;
+    height: 80vh;
+    padding: 30px 10px;
     width: 100%;
-    padding: 40px 0px;
-}
-#page2{
-    background-color: white;
-    width: 100%;
-    padding: 40px 0px;
+    text-align: center;
 }
 .titles{
-    color:royalblue;
+    color: black;
 }
-#socials{
-    height: 30px;
-    padding: 5%;
-}
-#headers{
-    height: 340px;
+
+/* socials bar*/
+#tab{
+    height: 10vh;
     width: 100%;
+    background-color: #798777;
+}
+.contact{
+    list-style: none;
+}
+
+.contact ul{
+    float: right;
+    margin-right: 20px;
+}
+.contact ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.contact ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+#socials, #socials:hover{
+    height: 60px;
+    padding: 20px;
+}
+
+#socials:hover, #socialsgit:hover{
+    background: #686868;
+    transition: .5sec;
+    border-radius: 20%;
+}
+#socialsgit{
+    height:  60px;
+    padding: 13px;
 }
