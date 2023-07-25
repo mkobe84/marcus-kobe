@@ -1,57 +1,62 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kobe Herrera's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id = "tabs">
-        <nav class = "navs">
-            <ul>
-                <li><a class = "active" href="#">home</a></li>
-                <li><a class = "t" href="./public/about.html">about</a></li>
-                <li><a class = "t" href="./public/contact.html">contact</a></li>
-                <li><a class = "t" href="./Kobe's Resume Project/index.html">resume</a></li></li>
-            </ul>
-        </nav>
+  <div id = "tabs">
+    <nav class = "navs">
+        <ul>
+            <li><a class = "active" href="#">home</a></li>
+            <li><a class = "t" href="./public/about.html">about</a></li>
+            <li><a class = "t" href="./public/contact.html">contact</a></li>
+            <li><a class = "t" href="./Kobe's Resume Project/index.html">resume</a></li></li>
+        </ul>
+    </nav>
+  </div>
+  <div class="main">
+    <h1>hey, my name is  <span class="creative">Marcus Kobe Herrera</span></h1>
+    <p style="text-align: center; padding-bottom: 250px">A newly graduate from UCI looking to create designs that lead to sucess.</p>
+    <h2 style="text-align: center;">Projects</h2>
+    <div class="left card"><a href="https://www.figma.com/proto/hD7SmlmlXlqNsbIdzakOWC/Flow-connected?node-id=91-4&starting-point-node-id=91%3A4"><img class="tile-image" src="./assets/images/arc.jpg" alt="uci recreational center"></a>
+      <h2 class="card-title"> <a href="https://www.figma.com/proto/hD7SmlmlXlqNsbIdzakOWC/Flow-connected?node-id=91-4&starting-point-node-id=91%3A4">Zot Squat</a></h2>
+      <p class="card-text">ZotSquat is my first deep dive towards front end app development where we created the UI/UX for
+        an app designed to help UCI students understand how busy the recreational center to be able to go at a time that best fits their schedule.
+      </p>
     </div>
-    <div id = "headers">
-        <h1 >Hey, I'm Marcus Kobe Herrera</h1>
-        <p>A newly graduate from UCI looking to create designs that lead to sucess.</p>
+
+    <div class="right card"><img class="tile-image" src="./assets/images/nfc.jpg" alt="nfc stickers">
+      <h2 class="card-title">NFC Tags for Homes</h2>
+      <p>This website takes advantage of the use of the advancement in technology such as NFC tags. 
+        These tags help us gather data from around the house 
+        to help us know what is being used and simplifying everyday tasks.</p>
     </div>
-    <div id = "projects">
-        <h2>Projects</h2>
-        <div id = "page1">
-            <div class = "img1"> 
-                <h3><a class = "titles" href="./public/anime-ranking.html">Anime Ranking Project</a></h3>
-                <img class="img1" src="./assets/images/anime ranking.png">
-            </div>
-            <div class = "img2"><h3><a class = "titles" href="./public/bday.html">Kobe's Birthday Invite</a></h3>
-                <img src="./assets/images/bday_invite.png">
-            </div>
-        </div>
-    </div>
-    <div id = "tab">
-        <nav class = "contact">
-            <ul>
-                <li><a href="https://github.com/mkobe84"><img id = "socialsgit" src="./assets/images/gh.png" alt="github logo"></a></li>
-                <li>            <a href="https://www.facebook.com/marcus.kobe/">
-                    <img id = "socials" src="./assets/images/fb.png" alt="facebook logo">
-                </a></li>
-                <li>            <a href="https://www.instagram.com/ebokiii/">
-                    <img id = "socials" src="./assets/images/ig.png" alt="instagram logo">
-                </a></li>
-                <li><a href="./assets/images/MarcusKobeHerrera_resume (1).pdf">
-                    <img id = "socials" src="./assets/images/resume.png" alt="instagram logo">
-                </a></li>
-            </ul>
-        </nav>
-    </div>
+
+  </div>
+  <div id = "tab">
+    <nav class = "contact">
+        <ul>
+            <li><a href="https://github.com/mkobe84"><img id = "socialsgit" src="./assets/images/gh.png" alt="github logo"></a></li>
+            <li>            <a href="https://www.facebook.com/marcus.kobe/">
+                <img id = "socials" src="./assets/images/fb.png" alt="facebook logo">
+            </a></li>
+            <li>            <a href="https://www.instagram.com/ebokiii/">
+                <img id = "socials" src="./assets/images/ig.png" alt="instagram logo">
+            </a></li>
+            <li><a href="./assets/images/MarcusKobeHerrera_resume (1).pdf">
+                <img id = "socials" src="./assets/images/resume.png" alt="instagram logo">
+            </a></li>
+        </ul>
+    </nav>
+</div>
 </body>
+
 </html>

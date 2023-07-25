@@ -1,151 +1,141 @@
-*{
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    font-family: 'Lato', sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 50px 50px 0px 50px;
+    background-color: #faf9f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+  }
+  .main {
+    flex: 1;
+  }
+  
+  
+  /* navigation bar*/
+  .navs{
+    padding: 0;
     background-color: white;
-    margin: 0;
-}
-
-/* navigation bar*/
-.navs{
-    background-color: #81c995;
     height: 80px;
     width: 100%;
     list-style: none;
-}
-
-.navs ul{
+  }
+  
+  .navs ul{
     padding: 0;
-    margin: 0;
     text-align: center;
-}
-
-.navs ul li{
+  }
+  
+  .navs ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-}
-
-.navs ul li a{
-    color: white;
+  }
+  
+  .navs ul li a{
+    color: #81c995;
     font-size: 17px;
     font-weight: bold;
-}
-
-a.active, .t:hover{
-    background: #adaed2;
+  }
+  
+  a.active, .t:hover{
+    background: #dcdcdf;
     transition: .5s;
     padding: 5px;
     border-radius: 5px;
-}
-
-
-label.logo{
-    color:#F2E7D5;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 50px;
-    font-weight: bold;
-}
-
-
-/* opening screen*/
-#headers{
-    height: 100vh;
-    width: 100%;
-    color: #333;
-    text-align: center;
-    font-size: 1rem;
-    text-transform: lowercase;
-}
-#headers h1{
-    padding-top: 250px;
-    padding-bottom: 5px;
-    font-weight: 900px;
-}
-
-
-img{
-    border-radius: 5px ;
-    height: 200px;
-}
-a:visited{
-    color: rgb(79, 79, 79);
-}
-
-a{
-    color: white;
+  }
+  a{
     text-decoration: none;
-}
-
-
-/* projects */
-#projects h2{
-    background-color: #81c995;
-    height: 60px;
-    width: 100%;
-    line-height: 60px;
+    color: black;
+  }
+  a:hover{
+    background: #dcdcdf;
+    transition: .1s;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  h1{
+    font-size: 3rem;
     text-align: center;
-    text-decoration: underline;
-    text-transform: lowercase;
-    color: white;
-    padding: 0;
-    margin: 0;
-}
-
-#page1{
-    background-color: white;
-    height: 80vh;
-    text-transform: lowercase;
-    padding: 30px 10px;
+    margin-bottom: 0px;
+    padding-top: 210px;
+  }
+  
+  
+  .tile-image{
+    height: 200px;
     width: 100%;
-    text-align: center;
-}
-.titles{
-    color: #333;
-}
+    float: left;
+    margin-right: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .left{
+    float: left;
+  }
 
-/* socials bar*/
-#tab{
+  .right{
+    float: right;
+  }
+  .card{
+    width: 45%;
+  }
+  .creative{
+    color: #81c995;
+  }
+  .card{
+    width: 45%;
+  }
+  @media (max-width: 680px){
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+    .card{
+      width: 100%;
+      display: block;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+    .card img{
+      margin-bottom: 10px;
+      width: 100%;
+      display: inline;
+      object-fit: cover;
+    }
+  }
+  
+  /* socials bar*/
+  #tab{
     height: 80px;
     width: 100%;
-    background-color: #333;
-}
-.contact{
+    background-color: white;
+  }
+  .contact{
     list-style: none;
-}
-
-.contact ul{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .contact ul{
     float: right;
-    margin-right: 20px;
-}
-.contact ul li{
+  }
+  .contact ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
-}
-
-.contact ul li a{
-    color: white;
-    font-size: 17px;
-    text-transform: uppercase;
-}
-#socials, #socials:hover{
-    height: 60px;
-    padding: 20px;
-}
-
-#socials:hover, #socialsgit:hover{
-    background: #686868;
+    margin: 0;
+  }
+  #socials, #socials:hover{
+    height: 30px;
+    padding: 10px;
+  }
+  
+  #socials:hover, #socialsgit:hover{
+    background: #dcdcdf;
     transition: .5sec;
     border-radius: 20%;
-}
-#socialsgit{
-    height:  60px;
-    padding: 13px;
-}
+  }
+  #socialsgit{
+    height:  40px;
+    padding: 5px;
+  }
+  
