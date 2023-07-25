@@ -54,6 +54,12 @@ body {
     transition: .5s;
     border-radius: 5px;
   }
+  .pg1{
+    height: 100vh;
+  }
+  .pg2{
+    height: 70vh;
+  }
   h1{
     font-size: 3rem;
     text-align: center;
