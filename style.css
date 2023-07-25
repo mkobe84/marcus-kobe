@@ -1,5 +1,7 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
 body {
-    font-family: "Poppins", sans-serif;
     margin: 50px 50px 0px 50px;
     background-color: #faf9f6;
     display: flex;
@@ -14,7 +16,7 @@ body {
   /* navigation bar*/
   .navs{
     padding: 0;
-    background-color: white;
+    background-color: #faf9f6;
     height: 80px;
     width: 100%;
     list-style: none;
@@ -47,10 +49,9 @@ body {
     text-decoration: none;
     color: black;
   }
-  a:hover{
+  .card-title:hover{
     background: #dcdcdf;
-    transition: .1s;
-    padding: 5px;
+    transition: .5s;
     border-radius: 5px;
   }
   h1{
@@ -108,7 +109,7 @@ body {
   #tab{
     height: 80px;
     width: 100%;
-    background-color: white;
+    background-color: #faf9f6;
   }
   .contact{
     list-style: none;
@@ -132,7 +133,7 @@ body {
   #socials:hover, #socialsgit:hover{
     background: #dcdcdf;
     transition: .5sec;
-    border-radius: 20%;
+    border-radius: 5px;
   }
   #socialsgit{
     height:  40px;
