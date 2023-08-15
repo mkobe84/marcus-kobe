@@ -111,6 +111,10 @@ body {
     }
   }
   
+  .lead .languages{
+    color: #81c995;
+  }
+
   /* socials bar*/
   #tab{
     height: 80px;
