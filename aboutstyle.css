@@ -73,7 +73,7 @@ a, .t{
     margin: 0;
   }
   #socials, #socials:hover{
-    height: 40px;
+    height: 50px;
     padding: 10px;
   }
   
@@ -83,7 +83,8 @@ a, .t{
     border-radius: 5px;
   }
   #socialsgit{
-    height:  40px;
+    height:  50px;
     padding: 5px;
   }
+  
   
