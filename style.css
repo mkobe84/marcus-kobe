@@ -94,6 +94,9 @@ body {
     width: 45%;
   }
   @media (max-width: 680px){
+    .pg1{
+      padding-bottom: 150px;
+    }
     h1 {
       font-size: 3rem;
       text-align: center;
