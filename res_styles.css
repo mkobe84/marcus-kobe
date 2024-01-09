@@ -1,93 +1,88 @@
 body {
-    margin: 50px 50px 0px 50px;
-    display: flex;
-    flex-direction: column;
-    min-height: 95vh;
-    color: #81c995;
+  margin: 50px 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  color: #81c995;
 }
 
-.heading{
-    text-align: center;
-}
 .main {
-    flex: 1;
+  flex: 1;
 }
 
 .top{
-    background-color: #faf9f6;
+  background-color: #faf9f6;
 }
-/* navigation bar*/
+/* navigation bar/
 .navs{
-    padding: 0;
-    background-color: #faf9f6;
-    height: 80px;
-    width: 100%;
-    list-style: none;
+  padding: 0;
+  background-color: #faf9f6;
+  height: 80px;
+  width: 100%;
+  list-style: none;
 }
 
 
 .navs ul{
-    padding: 0;
-    text-align: center;
+  padding: 0;
+  text-align: center;
 }
 
 .navs ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
 
 .navs ul li a{
-    color: #81c995;
-    font-size: 17px;
-    font-weight: bold;
+  color: #81c995;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 a.active, .t:hover{
-    background: #dcdcdf;
-    transition: .5s;
-    padding: 5px;
-    border-radius: 5px;
-    text-decoration: none;
+  background: #dcdcdf;
+  transition: .5s;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 a, .t{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-  /* socials bar*/
-  #tab{
-    height: 80px;
-    width: 100%;
-    background-color: #faf9f6;
-  }
-  .contact{
-    list-style: none;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .contact ul{
-    float: right;
-  }
-  .contact ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0;
-  }
-  #socials, #socials:hover{
-    height: 50px;
-    padding: 10px;
-  }
-  
-  #socials:hover, #socialsgit:hover{
-    background: #dcdcdf;
-    transition: .5sec;
-    border-radius: 5px;
-  }
-  #socialsgit{
-    height:  50px;
-    padding: 5px;
-  }
-  
-  
+/ socials bar*/
+#tab{
+  height: 80px;
+  width: 100%;
+  background-color: #faf9f6;
+}
+.contact{
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.contact ul{
+  float: right;
+}
+.contact ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0;
+}
+#socials, #socials:hover{
+  height: 40px;
+  padding: 10px;
+}
+
+#socials:hover, #socialsgit:hover{
+  background: #dcdcdf;
+  transition: .5sec;
+  border-radius: 5px;
+}
+#socialsgit{
+  height:  40px;
+  padding: 5px;
+}
