@@ -50,7 +50,7 @@ body {
     text-decoration: none;
     color: black;
   }
-  .card-title:hover{
+  .pic-title:hover{
     background: #dcdcdf;
     transition: .5s;
     border-radius: 5px;
@@ -60,6 +60,9 @@ body {
   }
   .pg2{
     height: 70vh;
+  }
+  .projects{
+    display: flex;
   }
   h1{
     font-size: 3rem;
@@ -79,19 +82,18 @@ body {
   }
   .left{
     float: left;
+    margin-right: auto;
   }
 
   .right{
     float: right;
+    margin-left: auto;
   }
-  .card{
+  .pic{
     width: 45%;
   }
   .creative{
     color: #81c995;
-  }
-  .card{
-    width: 45%;
   }
   @media (max-width: 680px){
     .pg1{
@@ -101,13 +103,18 @@ body {
       font-size: 3rem;
       text-align: center;
     }
-    .card{
+    .projects{
       width: 100%;
       display: block;
+      text-align: justify;
+    }
+    .pic{
+      width: 100%;
       margin-bottom: 30px;
       text-align: justify;
     }
-    .card img{
+    
+    .pic-img{
       margin-bottom: 10px;
       width: 100%;
       display: inline;
@@ -140,7 +147,7 @@ body {
     margin: 0;
   }
   #socials, #socials:hover{
-    height: 30px;
+    height: 40px;
     padding: 10px;
   }
   
@@ -153,4 +160,3 @@ body {
     height:  40px;
     padding: 5px;
   }
-  
