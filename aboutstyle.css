@@ -1,9 +1,12 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
 body {
-    margin: 50px 50px 0px 50px;
-    display: flex;
-    flex-direction: column;
-    min-height: 95vh;
-    color: #81c995;
+  margin: 50px 50px 0px 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
 }
 
 .main {
@@ -15,37 +18,50 @@ body {
 }
 /* navigation bar*/
 .navs{
-    padding: 0;
-    background-color: #faf9f6;
-    height: 80px;
-    width: 100%;
-    list-style: none;
+  padding: 0;
+  background-color: #faf9f6;
+  height: 80px;
+  width: 100%;
+  list-style: none;
 }
+
 
 
 .navs ul{
-    padding: 0;
-    text-align: center;
+  padding: 0;
+  text-align: center;
 }
 
 .navs ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
 
 .navs ul li a{
-    color: #81c995;
-    font-size: 17px;
-    font-weight: bold;
+  color: #81c995;
+  font-size: 17px;
+  font-weight: bold;
 }
 
+.navs ul li a.active {
+  background: url('assets/images/favicon.ico') no-repeat left center;
+  padding-left: 30px; /* Adjust the padding to make space for the image */
+  background-size: 20px 20px; /* Adjust the size of the image */
+  color: burlywood;
+  font-size: 17px;
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+
 a.active, .t:hover{
-    background: #dcdcdf;
-    transition: .5s;
-    padding: 5px;
-    border-radius: 5px;
-    text-decoration: none;
+  background: #f1f1f5;
+  transition: .5s;
+  padding: 5px;
+  border-radius: 5px;
+  color: burlywood;
 }
 a, .t{
     text-decoration: none;
