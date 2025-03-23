@@ -1,24 +1,35 @@
 @font-face {
-    font-family: Doto;
-    src: url('../src/assets/fonts/Satoshi-Variable.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: Doto;
+  src: url("../src/assets/fonts/Satoshi-Variable.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: DotoItal;
+  src: url("../src/assets/fonts/Satoshi-VariableItalic.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-doto: Doto, "sans-serif";
+  --font-dotoital: DotoItal, "sans-serif";
+
+  --animate-rotate-border: border-rotate 3s linear infinite;
+
+  @keyframes border-rotate {
+    to {
+      --border-angle: 360deg;
+    }
   }
-  @font-face {
-    font-family: DotoItal;
-    src: url('../src/assets/fonts/Satoshi-VariableItalic.ttf');
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  @custom-variant dark (&:where(.dark, .dark *));
+}
 
-  @theme{
-    --font-doto: Doto, "sans-serif";
-    --font-dotoital: DotoItal, "sans-serif";
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
 
-  }
-
-  @import "tailwindcss";
-
-  
+@import "tailwindcss";

@@ -11,23 +11,33 @@ const Portfolio = () => {
   };
   const ProjectCard = ({ title, hoverTitle, description, techStack }) => {
     return (
-      <div className="relative group w-full h-48 rounded-lg overflow-hidden flex items-center justify-center border">
+      <div
+        className="relative group w-full h-48 rounded-lg overflow-hidden flex items-center justify-center animate-rotate-border 
+      rounded-lg  hover:scale-[1.03] hover:bg-conic/[from_var(--border-angle)] from-black via-[#0b7763] from-80% via-90% to-100% p-px perspective "
+      >
         {/* Default view: Blank image with title */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div
+          className={`${
+            theme === "dark" ? "bg-neutral-900 " : "bg-[#e5e5e5]"
+          } w-full h-full inset-0 flex items-center justify-center rounded-lg p-10 border-black`}
+        >
           <span className="text-lg font-semibold">{title}</span>
         </div>
-
         {/* Hover effect: Dark overlay with project details */}
-        <div className="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-          <h3 className="text-white font-bold text-lg">{hoverTitle}</h3>
-          <p className="text-gray-300 text-sm text-center mt-2">
+        <div
+          className={`${
+            theme === "dark" ? "bg-neutral-900 " : "bg-[#e5e5e5]"
+          } absolute inset-0 bg-opacity-90 flex flex-col items-center m-1 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 `}
+        >
+          <h3 className="font-bold text-lg">{hoverTitle}</h3>
+          <p className="text-gray-600 text-sm text-center mt-2">
             {description}
           </p>
-          <div className="mt-3 flex flex-wrap justify-center gap-2">
+          <div className="mt-3 flex flex-wrap justify-center gap-2 ">
             {techStack.map((tech, index) => (
               <span
                 key={index}
-                className="px-2 py-1 text-xs font-medium text-white bg-gray-700 rounded-md"
+                className="px-2 py-1 text-xs font-medium rounded-md bg-[#333] text-white"
               >
                 {tech}
               </span>
@@ -209,7 +219,7 @@ const Portfolio = () => {
                 </p>
                 <section className="mt-8 flex items-center gap-16">
                   <a href="./MKH_Resume.pdf" download="MKH_Resume.pdf">
-                    <button className="hover:bg-[#0b7763] hover:text-white font-bold py-2 px-4 rounded inline-flex items-center mt-1">
+                    <button className="hover:bg-[#0b7763] border hover:text-white font-bold py-2 px-4 rounded inline-flex items-center mt-1">
                       <svg
                         class="fill-current w-4 h-4 mr-2"
                         xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +235,7 @@ const Portfolio = () => {
               </div>
             </section>
             {/* Tabs Navigation */}
-            <div className="grid">
+            <div className="grid ">
               <h2 class="title text-2xl sm:text-3xl font-doto text-[#0b7763] flex gap-2">
                 <p>experience</p>
                 <img
@@ -261,9 +271,9 @@ const Portfolio = () => {
               <section>
                 {activeTab === "work" ? (
                   // Work Experience
-                  <div className="mt-6 flex flex-col gap-6">
+                  <div className="mt-6 flex flex-col gap-6 ">
                     {/* Work Item 1 */}
-                    <div className="flex items-start gap-4 p-4 border rounded-lg">
+                    <div className="flex items-start gap-4 p-4 ">
                       <img
                         src="/marcus-kobe/assets/playpath.jpeg"
                         alt="PlayPath"
@@ -289,7 +299,7 @@ const Portfolio = () => {
                     </div>
 
                     {/* Work Item 2 */}
-                    <div className="flex items-start gap-4 p-4 border rounded-lg">
+                    <div className="flex items-start gap-4 p-4">
                       <img
                         src="/marcus-kobe/assets/prenostik.jpeg"
                         alt="Prenostik"
@@ -318,7 +328,7 @@ const Portfolio = () => {
                   // Education Section
                   <div className="mt-6 flex flex-col gap-6">
                     {/* Education Item 1 */}
-                    <div className="flex items-start gap-4 p-4 border rounded-lg">
+                    <div className="flex items-start gap-4 p-4">
                       <div className="text-end">
                         <h3 className="font-bold text-lg">
                           University of California
@@ -387,7 +397,7 @@ const Portfolio = () => {
               </div>
             </section>
             {/* Project Section */}
-            <h2 className="title text-2xl sm:text-3xl font-doto font-stretch-ultra-condensed text-[#0b7763] flex gap-2 p-2">
+            <h2 className="title text-2xl sm:text-3xl font-doto text-[#0b7763] flex gap-2 p-2 p-px">
               tech stack
               <img
                 src="/marcus-kobe/assets/revive.png"
@@ -395,70 +405,77 @@ const Portfolio = () => {
                 className="w-8 h-8 mt-1"
               />
             </h2>
-            <div className="grid grid-cols-4 gap-4 justify-items-center">
-              <div className="flex flex-col items-center">
-                <img
-                  src="/marcus-kobe/assets/badges/badge1.png"
-                  alt="revive"
-                  className="w-12 h-12"
-                />
-                <p>React</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="/marcus-kobe/assets/badges/badge2.png"
-                  alt="revive"
-                  className="w-12 h-12"
-                />
-                <p>TailWind</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="/marcus-kobe/assets/badges/badge3.png"
-                  alt="revive"
-                  className="w-12 h-12"
-                />
-                <p>HTML5</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="/marcus-kobe/assets/badges/badge4.png"
-                  alt="revive"
-                  className="w-12 h-12"
-                />
-                <p>CSS</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="/marcus-kobe/assets/badges/badge5.png"
-                  alt="revive"
-                  className="w-12 h-12"
-                />
-                <p>JavaScript</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="/marcus-kobe/assets/badges/badge6.png"
-                  alt="revive"
-                  className="w-12 h-12"
-                />
-                <p>TypeScript</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="/marcus-kobe/assets/badges/badge7.png"
-                  alt="revive"
-                  className="w-12 h-12"
-                />
-                <p>Python</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img
-                  src="/marcus-kobe/assets/badges/badge8.png"
-                  alt="revive"
-                  className="w-12 h-12"
-                />
-                <p>NextJS</p>
+
+            <div className="animate-rotate-border rounded-lg  hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-[#0b7763] from-80% via-90% to-100% p-px perspective">
+              <div
+                className={`${
+                  theme === "dark" ? "bg-neutral-900 " : "bg-[#e5e5e5]"
+                } grid grid-cols-4 rounded-lg gap-4 justify-items-center p-6 `}
+              >
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/marcus-kobe/assets/badges/badge1.png"
+                    alt="revive"
+                    className="w-12 h-12"
+                  />
+                  <p>React</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/marcus-kobe/assets/badges/badge2.png"
+                    alt="revive"
+                    className="w-12 h-12"
+                  />
+                  <p>TailWind</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/marcus-kobe/assets/badges/badge3.png"
+                    alt="revive"
+                    className="w-12 h-12"
+                  />
+                  <p>HTML5</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/marcus-kobe/assets/badges/badge4.png"
+                    alt="revive"
+                    className="w-12 h-12"
+                  />
+                  <p>CSS</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/marcus-kobe/assets/badges/badge5.png"
+                    alt="revive"
+                    className="w-12 h-12"
+                  />
+                  <p>JavaScript</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/marcus-kobe/assets/badges/badge6.png"
+                    alt="revive"
+                    className="w-12 h-12"
+                  />
+                  <p>TypeScript</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/marcus-kobe/assets/badges/badge7.png"
+                    alt="revive"
+                    className="w-12 h-12"
+                  />
+                  <p>Python</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img
+                    src="/marcus-kobe/assets/badges/badge8.png"
+                    alt="revive"
+                    className="w-12 h-12"
+                  />
+                  <p>NextJS</p>
+                </div>
               </div>
             </div>
           </article>
