@@ -11,7 +11,7 @@ const Portfolio = () => {
   };
   const ProjectCard = ({ title, hoverTitle, description, techStack }) => {
     return (
-      <div className="relative group w-full h-48 border border-2 rounded-lg overflow-hidden flex items-center justify-center">
+      <div className="relative group w-full h-48 rounded-lg overflow-hidden flex items-center justify-center border">
         {/* Default view: Blank image with title */}
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-lg font-semibold">{title}</span>
@@ -117,7 +117,7 @@ const Portfolio = () => {
       <div className="mx-auto flex max-w-2xl flex-col px-8 font-doto">
         <main className="grow">
           {/* Navbar */}
-          <header className="sticky top-0 bg-background/75 py-6 backdrop-blur-md font-doto text-xs">
+          <header className="sticky top-0 z-40 bg-background/75 py-6 backdrop-blur-md font-doto text-xs">
             <nav className="flex items-center justify-between">
               {/* Navigation Links */}
               <ul className="flex gap-4 sm:gap-6">
@@ -209,7 +209,7 @@ const Portfolio = () => {
                 </p>
                 <section className="mt-8 flex items-center gap-16">
                   <a href="./MKH_Resume.pdf" download="MKH_Resume.pdf">
-                    <button className="border hover:bg-[#0b7763] hover:text-white font-bold py-2 px-4 rounded inline-flex items-center mt-1">
+                    <button className="hover:bg-[#0b7763] hover:text-white font-bold py-2 px-4 rounded inline-flex items-center mt-1">
                       <svg
                         class="fill-current w-4 h-4 mr-2"
                         xmlns="http://www.w3.org/2000/svg"
@@ -387,20 +387,82 @@ const Portfolio = () => {
               </div>
             </section>
             {/* Project Section */}
-            <section className="flex flex-col gap-8">
-              <div class="flex justify-between">
-                <h2 class="title text-2xl sm:text-3xl font-doto font-stretch-ultra-condensed text-[#0b7763] flex gap-2">
-                  tech stack
-                  <img
-                    src="/marcus-kobe/assets/revive.png"
-                    alt="revive"
-                    className="w-8 h-8 mt-1"
-                  />
-                </h2>
+            <h2 className="title text-2xl sm:text-3xl font-doto font-stretch-ultra-condensed text-[#0b7763] flex gap-2 p-2">
+              tech stack
+              <img
+                src="/marcus-kobe/assets/revive.png"
+                alt="revive"
+                className="w-8 h-8 mt-1"
+              />
+            </h2>
+            <div className="grid grid-cols-4 gap-4 justify-items-center">
+              <div className="flex flex-col items-center">
+                <img
+                  src="/marcus-kobe/assets/badges/badge1.png"
+                  alt="revive"
+                  className="w-12 h-12"
+                />
+                <p>React</p>
               </div>
-            </section>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/marcus-kobe/assets/badges/badge2.png"
+                  alt="revive"
+                  className="w-12 h-12"
+                />
+                <p>TailWind</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/marcus-kobe/assets/badges/badge3.png"
+                  alt="revive"
+                  className="w-12 h-12"
+                />
+                <p>HTML5</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/marcus-kobe/assets/badges/badge4.png"
+                  alt="revive"
+                  className="w-12 h-12"
+                />
+                <p>CSS</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/marcus-kobe/assets/badges/badge5.png"
+                  alt="revive"
+                  className="w-12 h-12"
+                />
+                <p>JavaScript</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/marcus-kobe/assets/badges/badge6.png"
+                  alt="revive"
+                  className="w-12 h-12"
+                />
+                <p>TypeScript</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/marcus-kobe/assets/badges/badge7.png"
+                  alt="revive"
+                  className="w-12 h-12"
+                />
+                <p>Python</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img
+                  src="/marcus-kobe/assets/badges/badge8.png"
+                  alt="revive"
+                  className="w-12 h-12"
+                />
+                <p>NextJS</p>
+              </div>
+            </div>
           </article>
-          <footer className="py-6">
+          <footer className="py-8">
             <div className="flex justify-center gap-6">
               <p className="mt-2 text-sm text-[#0b7763]">
                 © 2025 Marcus Kobe Herrera | One day or day one
