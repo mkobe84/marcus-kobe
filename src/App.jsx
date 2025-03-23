@@ -62,19 +62,19 @@ const Portfolio = () => {
           className="inline-flex items-center justify-center h-9 w-9 rounded-md transition-colors duration-200 hover:bg-gray-300 hover:bg-opacity-30"
         >
           <img
-            src="./marcus-kobe/github.svg"
+            src="marcus-kobe/github.svg"
             alt="github"
             className="w-6 h-6 hover:bg-gray-300"
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/marcus-kobe-herrera/"
+          href="https://www.linkedin.com/i/marcus-kobe-herrera/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center h-9 w-9 rounded-md p-1 transition-colors duration-200 hover:bg-gray-300 hover:bg-opacity-30"
         >
           <img
-            src="./marcus-kobe/linkedin.svg"
+            src="marcus-kobe/linkedin.svg"
             alt="linkedin"
             className="w-6 h-6 hover:bg-gray-300"
           />
@@ -84,7 +84,7 @@ const Portfolio = () => {
           className="inline-flex items-center justify-center h-9 w-9 rounded-md p-1 transition-colors duration-200 hover:bg-gray-300 hover:bg-opacity-30"
         >
           <img
-            src="./marcus-kobe/envelope.svg"
+            src="marcus-kobe/envelope.svg"
             alt="email"
             className="w-6 h-6 hover:bg-gray-300"
           />
@@ -157,8 +157,8 @@ const Portfolio = () => {
                   <img
                     src={
                       theme === "light"
-                        ? "./marcus-kobe/electric.svg"
-                        : "./marcus-kobe/darkicon.svg"
+                        ? "marcus-kobe/electric.svg"
+                        : "marcus-kobe/darkicon.svg"
                     }
                     alt="Theme icon"
                     height="30"
@@ -177,13 +177,13 @@ const Portfolio = () => {
                 width="200"
                 height="200"
                 className="rounded-xl"
-                src="./marcus-kobe/pfp2.png"
+                src="marcus-kobe/pfp2.png"
               />
               <div className="flex flex-col gap-2">
                 <h1 className="text-3xl font-dotoital flex gap-2 text-[#0b7763]">
                   hi kobe here
                   <img
-                    src="./marcus-kobe/player.png"
+                    src="marcus-kobe/player.png"
                     alt="player"
                     className="w-10 h-10"
                   />
@@ -216,7 +216,7 @@ const Portfolio = () => {
               <h2 class="title text-2xl sm:text-3xl font-doto text-[#0b7763] flex gap-2">
                 <p>experience</p>
                 <img
-                  src="./marcus-kobe/expshare.png"
+                  src="marcus-kobe/expshare.png"
                   alt="expshare"
                   className="w-8 h-8 mt-1"
                 />
@@ -252,7 +252,7 @@ const Portfolio = () => {
                     {/* Work Item 1 */}
                     <div className="flex items-start gap-4 p-4 border rounded-lg">
                       <img
-                        src="./marcus-kobe/playpath.jpeg"
+                        src="marcus-kobe/playpath.jpeg"
                         alt="PlayPath"
                         className="w-12 h-12 rounded-lg"
                       />
@@ -278,7 +278,7 @@ const Portfolio = () => {
                     {/* Work Item 2 */}
                     <div className="flex items-start gap-4 p-4 border rounded-lg">
                       <img
-                        src="./marcus-kobe/prenostik.jpeg"
+                        src="marcus-kobe/prenostik.jpeg"
                         alt="Prenostik"
                         className="w-12 h-12 rounded-lg"
                       />
@@ -322,7 +322,7 @@ const Portfolio = () => {
                         </ul>
                       </div>
                       <img
-                        src="./marcus-kobe/uci.png"
+                        src="marcus-kobe/uci.png"
                         alt="UCI"
                         className="w-12 h-12 rounded-lg"
                       />
@@ -338,7 +338,7 @@ const Portfolio = () => {
                 <h2 class="title text-2xl sm:text-3xl font-doto font-stretch-ultra-condensed text-[#0b7763] flex gap-2">
                   featured projects
                   <img
-                    src="./marcus-kobe/projects.png"
+                    src="marcus-kobe/projects.png"
                     alt="projects"
                     className="w-8 h-8 mt-2"
                   />
@@ -379,7 +379,7 @@ const Portfolio = () => {
                 <h2 class="title text-2xl sm:text-3xl font-doto font-stretch-ultra-condensed text-[#0b7763] flex gap-2">
                   tech stack
                   <img
-                    src="./marcus-kobe/revive.png"
+                    src="marcus-kobe/revive.png"
                     alt="revive"
                     className="w-8 h-8 mt-1"
                   />
