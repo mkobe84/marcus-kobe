@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ghIcon from "./assets/github.svg";
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("work"); // Track active tab
@@ -62,7 +63,7 @@ const Portfolio = () => {
           className="inline-flex items-center justify-center h-9 w-9 rounded-md transition-colors duration-200 hover:bg-gray-300 hover:bg-opacity-30"
         >
           <img
-            src="./marcus-kobe/github.svg"
+            src={ghIcon}
             alt="github"
             className="w-6 h-6 hover:bg-gray-300"
           />
@@ -147,7 +148,6 @@ const Portfolio = () => {
                   </a>
                 </li>
               </ul>
-
               {/* Theme Toggle Button */}
               <div className="flex gap-0 sm:gap-4">
                 <button
