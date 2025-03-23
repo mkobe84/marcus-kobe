@@ -2,7 +2,7 @@
   "name": "marcus-kobe",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mkobe84.github.io/marcus-kobe/",
+  "homepage": "https://mkobe84.github.io/marcus-kobe",
   "type": "module",
   "scripts": {
     "dev": "vite",
