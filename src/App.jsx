@@ -9,17 +9,17 @@ const Portfolio = () => {
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
-  const ProjectCard = ({ title, description, techStack }) => {
+  const ProjectCard = ({ title, hoverTitle, description, techStack }) => {
     return (
-      <div className="relative group w-full h-48 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
+      <div className="relative group w-full h-48 border border-2 rounded-lg overflow-hidden flex items-center justify-center">
         {/* Default view: Blank image with title */}
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-300">
+        <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-lg font-semibold">{title}</span>
         </div>
 
         {/* Hover effect: Dark overlay with project details */}
         <div className="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-          <h3 className="text-white font-bold text-lg">{title}</h3>
+          <h3 className="text-white font-bold text-lg">{hoverTitle}</h3>
           <p className="text-gray-300 text-sm text-center mt-2">
             {description}
           </p>
@@ -40,13 +40,27 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "Kirby's Journal",
+      title: (
+        <img
+          src="/marcus-kobe/assets/Books.png"
+          alt="gh"
+          className="w-12 h-12"
+        />
+      ),
+      hoverTitle: "Kirby's Journal",
       description:
         "A journaling website that takes advantage of your devices camera and recognizes certain hand gestures to specific actions on the website such as creating new journal entries.",
       techStack: ["React", "Tailwind", "Node.js"],
     },
     {
-      title: "BrainBoost",
+      title: (
+        <img
+          src="/marcus-kobe/assets/boost.png"
+          alt="gh"
+          className="w-12 h-12"
+        />
+      ),
+      hoverTitle: "BrainBoost",
       description:
         "A student learning dashboard developed for Prenostik, designed to collect and analyze student data to support initiatives aimed at improving graduation rates.",
       techStack: ["Next.js", "TypeScript", "Local Storage"],
@@ -109,7 +123,7 @@ const Portfolio = () => {
               <ul className="flex gap-4 sm:gap-6">
                 <li className="link">
                   <a
-                    href="/"
+                    href="/marcus-kobe"
                     className={`transition-colors duration-200 hover:text-[#0b7763] hover:underline ${
                       activeHeader === "home"
                         ? "text-[#0b7763]"
@@ -122,7 +136,7 @@ const Portfolio = () => {
                 </li>
                 <li className="link">
                   <a
-                    href="/projects"
+                    href="/marcus-kobe/projects"
                     className={`transition-colors duration-200 hover:text-[#0b7763] hover:underline ${
                       activeHeader === "projects"
                         ? "text-[#0b7763]"
@@ -135,7 +149,7 @@ const Portfolio = () => {
                 </li>
                 <li className="link">
                   <a
-                    href="/contact"
+                    href="/marcus-kobe/contact"
                     className={`transition-colors duration-200 hover:text-[#0b7763] hover:underline ${
                       activeHeader === "contact"
                         ? "text-[#0b7763]"
@@ -351,9 +365,9 @@ const Portfolio = () => {
               <div className="flex justify-end">
                 <a
                   class="link flex items-center gap-2 font-light"
-                  href="/projects"
+                  href="/marcus-kobe/projects"
                 >
-                  <span className="text-[#0b7763]">view more</span>
+                  <span className="hover:text-[#0b7763]">view more</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
