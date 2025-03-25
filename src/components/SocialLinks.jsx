@@ -17,7 +17,7 @@ const SocialLinks = ({ className }) => {
         />
       </a>
       <a
-        href="https://www.linkedin.com/i/marcus-kobe-herrera/"
+        href="https://www.linkedin.com/in/marcus-kobe-herrera/"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center justify-center h-9 w-9 rounded-md p-1 transition-colors duration-200 hover:bg-gray-300 hover:bg-opacity-30"
