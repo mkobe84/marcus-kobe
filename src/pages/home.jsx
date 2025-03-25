@@ -1,5 +1,6 @@
 import React, { useState } from "react"; // <-- Add useState here
 import SocialLinks from "../components/SocialLinks";
+import Resume from "/MKHResume.pdf";
 
 const Home = ({ theme }) => {
   const [activeTab, setActiveTab] = useState("work"); // Track active tab
@@ -97,8 +98,8 @@ const Home = ({ theme }) => {
             developer who likes to code, but could not pick up basketball
           </p>
           <section className="mt-8 flex items-center gap-16">
-            <a href="./MKH_Resume.pdf" download="MKH_Resume.pdf">
-              <button className="hover:bg-[#0b7763] border hover:text-white font-bold py-2 px-4 rounded inline-flex items-center mt-1">
+            <a href={Resume} download="MarcusHerrera_Resume.pdf">
+              <button className="hover:bg-[#0b7763] border hover:scale-[1.05] rounded-lg hover:text-white font-bold py-2 px-4 rounded inline-flex items-center mt-1">
                 <svg
                   className="fill-current w-4 h-4 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
