@@ -20,13 +20,12 @@ const App = () => {
         } min-h-screen transition-all duration-300`}
       >
         <div className="mx-auto flex max-w-2xl flex-col px-8 font-doto">
-          <Navbar
-            setHeader={setHeader}
-            theme={theme}
-            toggleTheme={toggleTheme}
-          />
-
           <main className="grow">
+            <Navbar
+              setHeader={setHeader}
+              theme={theme}
+              toggleTheme={toggleTheme}
+            />
             <Routes>
               <Route path="/marcus-kobe" element={<Home theme={theme} />} />
               <Route
