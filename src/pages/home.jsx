@@ -1,6 +1,7 @@
 import React, { useState } from "react"; // <-- Add useState here
 import SocialLinks from "../components/SocialLinks";
 import Resume from "/MKHResume.pdf";
+import { NavLink } from "react-router-dom";
 
 const Home = ({ theme }) => {
   const [activeTab, setActiveTab] = useState("work"); // Track active tab
@@ -270,28 +271,28 @@ const Home = ({ theme }) => {
           </div>
         </section>
       </div>
-      <div className="flex justify-end">
-        <a
-          class="link flex items-center gap-2 font-light"
-          href="/marcus-kobe/projects"
+      <div className="flex justify-end hover:text-[#0b7763] ">
+        <NavLink
+          className="group link flex items-center gap-2 font-light text-black hover:text-[#0b7763]"
+          to="/marcus-kobe/projects"
         >
-          <span className="hover:text-[#0b7763]">view more</span>
+          <span>view more</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#0b7763"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-arrow-right size-5"
+            stroke="black"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-arrow-right size-5 group-hover:stroke-[#0b7763]"
           >
             <path d="M5 12h14"></path>
             <path d="m12 5 7 7-7 7"></path>
           </svg>
-        </a>
+        </NavLink>
       </div>
       <section className="flex flex-col gap-8 p-2">
         {/* Project Section */}
@@ -303,21 +304,21 @@ const Home = ({ theme }) => {
             className="w-8 h-8 mt-1"
           />
         </h2>
-        <div className="animate-rotate-border rounded-lg  hover:scale-[1.03] bg-conic/[from_var(--border-angle)] from-black via-[#0b7763] from-80% via-90% to-100% p-px perspective">
+        <div className="animate-rotate-border rounded-lg bg-conic/[from_var(--border-angle)] from-black via-[#0b7763] from-80% via-90% to-100% p-px perspective">
           <div
             className={`${
               theme === "dark" ? "bg-neutral-900 " : "bg-[#e5e5e5]"
             } grid grid-cols-4 rounded-lg gap-4 justify-items-center p-6 `}
           >
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
                 src="/marcus-kobe/assets/badges/badge1.png"
                 alt="revive"
-                className="w-12 h-12"
+                className=" w-12 h-12"
               />
               <p>React</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
                 src="/marcus-kobe/assets/badges/badge2.png"
                 alt="revive"
@@ -325,7 +326,7 @@ const Home = ({ theme }) => {
               />
               <p>TailWind</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
                 src="/marcus-kobe/assets/badges/badge3.png"
                 alt="revive"
@@ -333,7 +334,7 @@ const Home = ({ theme }) => {
               />
               <p>HTML5</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
                 src="/marcus-kobe/assets/badges/badge4.png"
                 alt="revive"
@@ -341,7 +342,7 @@ const Home = ({ theme }) => {
               />
               <p>CSS</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
                 src="/marcus-kobe/assets/badges/badge5.png"
                 alt="revive"
@@ -349,7 +350,7 @@ const Home = ({ theme }) => {
               />
               <p>JavaScript</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
                 src="/marcus-kobe/assets/badges/badge6.png"
                 alt="revive"
@@ -357,7 +358,7 @@ const Home = ({ theme }) => {
               />
               <p>TypeScript</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
                 src="/marcus-kobe/assets/badges/badge7.png"
                 alt="revive"
@@ -365,7 +366,7 @@ const Home = ({ theme }) => {
               />
               <p>Python</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
                 src="/marcus-kobe/assets/badges/badge8.png"
                 alt="revive"
