@@ -17,15 +17,11 @@ const App = () => {
       <div
         className={`${
           theme === "dark" ? "bg-[#292929] text-white" : "text-black"
-        } min-h-screen transition-all duration-300`}
+        } min-h-screen transition-all duration-300 px-8`}
       >
-        <div className="mx-auto flex max-w-2xl flex-col px-8 font-doto">
+        <Navbar setHeader={setHeader} theme={theme} toggleTheme={toggleTheme} />
+        <div className="mx-auto flex max-w-2xl flex-col font-doto ">
           <main className="grow">
-            <Navbar
-              setHeader={setHeader}
-              theme={theme}
-              toggleTheme={toggleTheme}
-            />
             <Routes>
               <Route path="/marcus-kobe" element={<Home theme={theme} />} />
               <Route

@@ -44,17 +44,21 @@ const Projects = ({ theme }) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative group w-full h-48 rounded-lg overflow-hidden flex items-center justify-center animate-rotate-border 
-          rounded-lg  hover:scale-[1.03] hover:bg-conic/[from_var(--border-angle)] from-black via-[#0b7763] from-80% via-90% to-100% p-px perspective "
+            className="relative group w-full h-100 rounded-lg overflow-hidden flex items-center justify-center  
+          rounded-lg  hover:scale-[1.03]  p-px "
           >
-            <div className="bg-[#e5e5e5] w-full h-full inset-0 flex items-center justify-center rounded-lg p-10 border-black">
-              <span className="text-lg font-semibold">{project.title}</span>
-            </div>
-            <div className="bg-[#e5e5e5] absolute inset-0 bg-opacity-90 flex flex-col items-center m-1 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 ">
-              <h3 className="font-bold text-lg">{project.hoverTitle}</h3>
-              <p className="text-gray-600 text-sm text-center mt-2">
-                {project.description}
-              </p>
+            <div
+              className={`${
+                theme === "dark"
+                  ? "bg-[#697565] text-white"
+                  : "bg-[#ECDFCC] text-black"
+              } flex w-full h-full flex-col p-4 rounded-xl`}
+            >
+              <h2 className="font-bold text-lg pb-2">{project.hoverTitle}</h2>
+              <div className="bg-[#e5e5e5] w-full h-full inset-0 flex items-center justify-center rounded-lg border-black">
+                <span className="text-lg font-semibold">{project.title}</span>
+              </div>
+              <p className="text-sm text-center mt-2">{project.description}</p>
               <div className="mt-3 flex flex-wrap justify-center gap-2 ">
                 {project.techStack.map((tech, index) => (
                   <span

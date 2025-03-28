@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ setHeader, theme, toggleTheme }) => {
   return (
-    <header className="sticky top-0 z-40 bg-background/75 py-6 backdrop-blur-md font-doto text-xs">
-      <nav className="flex items-center justify-between">
+    <header className="sticky top-0 z-40 bg-background/75 py-6 backdrop-blur-md font-doto text-xs px-">
+      <nav className="mx-auto flex max-w-2xl justify-between ">
         <ul className="flex gap-4 sm:gap-6">
           <li className="link">
             <Link
