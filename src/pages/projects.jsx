@@ -8,6 +8,7 @@ const Projects = ({ theme }) => {
       description:
         "A journaling website that takes advantage of your device's camera and recognizes hand gestures to create journal entries.",
       techStack: ["React", "Tailwind", "Node.js"],
+      website: "https://your-kirby-site.com",
     },
     {
       image: "/marcus-kobe/assets/brainboostSC.png",
@@ -15,6 +16,7 @@ const Projects = ({ theme }) => {
       description:
         "A student learning dashboard developed for Prenostik to help improve graduation rates through data analysis.",
       techStack: ["Next.js", "TypeScript", "Local Storage"],
+      website: "https://your-brainboost-site.com",
     },
   ];
 
@@ -38,13 +40,10 @@ const Projects = ({ theme }) => {
             <div
               className={`${
                 theme === "dark"
-                  ? "bg-[#697565] text-white"
-                  : "bg-[#ECDFCC] text-black"
-              } flex w-full h-full flex-col p-4 rounded-xl`}
+                  ? "bg-transparent text-white border-[#333]"
+                  : "bg-transparent text-black border-[#EBE8E2]"
+              } flex w-full h-full flex-col p-4 rounded-xl border border-2`}
             >
-              <h2 className="font-bold text-lg pb-2">{project.hoverTitle}</h2>
-
-              {/* Consistent image container */}
               <div className="w-full aspect-video bg-[#f9f9f9] rounded-md overflow-hidden border border-gray-300">
                 <img
                   src={project.image}
@@ -52,10 +51,10 @@ const Projects = ({ theme }) => {
                   className="w-full h-full object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
                 />
               </div>
+              <h2 className=" text-xl mt-2">{project.hoverTitle}</h2>
+              <p className="text-sm text-start">{project.description}</p>
 
-              <p className="text-sm text-center mt-3">{project.description}</p>
-
-              <div className="mt-3 flex flex-wrap justify-center gap-2">
+              <div className="mt-3 flex flex-wrap justify-start gap-2">
                 {project.techStack.map((tech, index) => (
                   <span
                     key={index}
@@ -65,6 +64,20 @@ const Projects = ({ theme }) => {
                   </span>
                 ))}
               </div>
+
+              {/* website button */}
+              {project.website && (
+                <div className="mt-1 text-start">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.website}
+                    className="px-3 py-1 text-xs font-medium rounded-md bg-[#0b7763] text-white hover:bg-[#095f50] transition"
+                  >
+                    website!
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         ))}
