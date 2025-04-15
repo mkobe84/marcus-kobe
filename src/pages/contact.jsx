@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = ({ theme }) => {
   return (
-    <div className="flex">
+    <div className="flex justify-between">
       <section className="p-8">
         <h2 className="text-2xl font-doto text-[#0b7763]">Contact</h2>
         <p className="mt-4">Feel free to reach out to me at any time!</p>

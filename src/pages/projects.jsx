@@ -3,36 +3,24 @@ import React from "react";
 const Projects = ({ theme }) => {
   const projects = [
     {
-      title: (
-        <img
-          src="/marcus-kobe/assets/Books.png"
-          alt="gh"
-          className="w-12 h-12"
-        />
-      ),
+      image: "/marcus-kobe/assets/kirbySC.png",
       hoverTitle: "Kirby's Journal",
       description:
-        "A journaling website that takes advantage of your devices camera and recognizes certain hand gestures to specific actions on the website such as creating new journal entries.",
+        "A journaling website that takes advantage of your device's camera and recognizes hand gestures to create journal entries.",
       techStack: ["React", "Tailwind", "Node.js"],
     },
     {
-      title: (
-        <img
-          src="/marcus-kobe/assets/boost.png"
-          alt="gh"
-          className="w-12 h-12"
-        />
-      ),
+      image: "/marcus-kobe/assets/brainboostSC.png",
       hoverTitle: "BrainBoost",
       description:
-        "A student learning dashboard developed for Prenostik, designed to collect and analyze student data to support initiatives aimed at improving graduation rates.",
+        "A student learning dashboard developed for Prenostik to help improve graduation rates through data analysis.",
       techStack: ["Next.js", "TypeScript", "Local Storage"],
     },
   ];
 
   return (
     <div>
-      <h2 className="title text-2xl sm:text-3xl font-doto text-[#0b7763] flex gap-2 p-2 p-px">
+      <h2 className="title text-2xl sm:text-3xl font-doto text-[#0b7763] flex gap-2 p-2 mb-8">
         featured projects
         <img
           src="/marcus-kobe/assets/projects.png"
@@ -40,12 +28,12 @@ const Projects = ({ theme }) => {
           className="w-8 h-8 mt-2"
         />
       </h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative group w-full h-100 rounded-lg overflow-hidden flex items-center justify-center  
-          rounded-lg  hover:scale-[1.03]  p-px "
+            className="relative group w-full rounded-lg transition-transform duration-300"
           >
             <div
               className={`${
@@ -55,11 +43,19 @@ const Projects = ({ theme }) => {
               } flex w-full h-full flex-col p-4 rounded-xl`}
             >
               <h2 className="font-bold text-lg pb-2">{project.hoverTitle}</h2>
-              <div className="bg-[#e5e5e5] w-full h-full inset-0 flex items-center justify-center rounded-lg border-black">
-                <span className="text-lg font-semibold">{project.title}</span>
+
+              {/* Consistent image container */}
+              <div className="w-full aspect-video bg-[#f9f9f9] rounded-md overflow-hidden border border-gray-300">
+                <img
+                  src={project.image}
+                  alt={project.hoverTitle}
+                  className="w-full h-full object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
+                />
               </div>
-              <p className="text-sm text-center mt-2">{project.description}</p>
-              <div className="mt-3 flex flex-wrap justify-center gap-2 ">
+
+              <p className="text-sm text-center mt-3">{project.description}</p>
+
+              <div className="mt-3 flex flex-wrap justify-center gap-2">
                 {project.techStack.map((tech, index) => (
                   <span
                     key={index}

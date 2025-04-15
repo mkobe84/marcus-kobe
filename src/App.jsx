@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/home";
@@ -8,7 +8,7 @@ import Contact from "./pages/contact";
 
 const App = () => {
   const [header, setHeader] = useState("home");
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
