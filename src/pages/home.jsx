@@ -31,7 +31,6 @@ const Home = ({ theme }) => {
         onClick={handleClick}
         className="relative group w-full h-64 rounded-lg overflow-hidden flex items-center justify-center animate-rotate-border hover:scale-[1.03] hover:bg-conic/[from_var(--border-angle)] from-black via-[#0b7763] from-80% via-90% to-100% p-px perspective"
       >
-        {/* Base view: Blank image with title */}
         <div
           className={`${
             theme === "dark" ? "bg-neutral-900" : "bg-[#e5e5e5]"
@@ -40,7 +39,6 @@ const Home = ({ theme }) => {
           <span className="text-lg">{title}</span>
         </div>
 
-        {/* Overlay for desktop hover or mobile click */}
         <div
           className={`${
             theme === "dark" ? "bg-neutral-900" : "bg-[#e5e5e5]"
@@ -145,17 +143,19 @@ const Home = ({ theme }) => {
   ];
   return (
     <article className="flex flex-col gap-16 pb-16">
-      <section className="flex flex-col p-2 items-start gap-8 md:flex-row md:items-center md:justify-between">
-        {" "}
+      <section className="flex flex-col p-2 sm:items-start gap-8 md:flex-row md:items-center md:justify-between">
+        {/* Image */}
         <img
           alt="profile"
           width="200"
           height="200"
-          className="rounded-xl"
+          className="rounded-xl mx-auto sm:mx-0"
           src="/marcus-kobe/assets/pfp2.png"
         />
-        <div className="flex flex-col gap-2">
-          <h1 className="text-3xl font-dotoital flex gap-2 text-[#0b7763]">
+
+        {/* Text Content */}
+        <div className="flex flex-col gap-2 items-center text-center sm:items-start sm:text-left">
+          <h1 className="text-4xl font-dotoital flex gap-2 text-[#0b7763] items-center justify-center sm:justify-start">
             hi kobe here
             <img
               src="/marcus-kobe/assets/player.png"
@@ -168,6 +168,7 @@ const Home = ({ theme }) => {
             22 year old <s className="text-red-800">pokemon trainer</s> software
             developer who likes to code, but could not pick up basketball
           </p>
+
           <section className="mt-8 flex items-center gap-16">
             <a href={Resume} download="MarcusHerrera_Resume.pdf">
               <button className="hover:bg-[#0b7763] border hover:scale-[1.05] rounded-lg hover:text-white font-bold py-2 px-4 rounded inline-flex items-center mt-1">

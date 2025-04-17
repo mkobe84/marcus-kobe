@@ -24,7 +24,6 @@ const ProjectCard = ({
       onClick={handleClick}
       className="relative group w-full h-64 rounded-lg overflow-hidden flex items-center justify-center animate-rotate-border hover:scale-[1.03] hover:bg-conic/[from_var(--border-angle)] from-black via-[#0b7763] from-80% via-90% to-100% p-px perspective"
     >
-      {/* Base view: Blank image with title */}
       <div
         className={`${
           theme === "dark" ? "bg-neutral-900" : "bg-[#e5e5e5]"
@@ -33,7 +32,6 @@ const ProjectCard = ({
         <span className="text-lg">{title}</span>
       </div>
 
-      {/* Overlay for desktop hover or mobile click */}
       <div
         className={`${
           theme === "dark" ? "bg-neutral-900" : "bg-[#e5e5e5]"

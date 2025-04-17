@@ -3,9 +3,7 @@ import React from "react";
 const Contact = ({ theme }) => {
   return (
     <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start p-6 sm:p-8 text-center sm:text-left">
-      {/* Left Section (Text + Header) */}
       <section className="w-full sm:w-1/2">
-        {/* Header */}
         <div className="flex justify-center sm:justify-start items-center gap-2 mb-4 sm:mb-8">
           <h2 className="title text-2xl sm:text-3xl font-doto text-[#0b7763]">
             contact me!
@@ -17,14 +15,12 @@ const Contact = ({ theme }) => {
           />
         </div>
 
-        {/* 👇 Mobile Image (only visible on mobile) */}
         <img
           alt="profile"
           className="rounded-xl w-32 h-32 mt-4 mb-4 sm:hidden mx-auto border-4 border-[#0b7763]"
           src="/marcus-kobe/assets/pfp2.png"
         />
 
-        {/* Description + Links */}
         <p className={`${theme === "dark" ? "text-white" : "text-black"} `}>
           Feel free to reach out to me at any time!
         </p>
@@ -55,7 +51,6 @@ const Contact = ({ theme }) => {
         </div>
       </section>
 
-      {/* 👇 Desktop Image (only visible on sm+) */}
       <img
         alt="profile"
         className="hidden sm:block rounded-xl w-50 h-50 mt-4"
