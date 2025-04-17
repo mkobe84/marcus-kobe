@@ -68,14 +68,46 @@ const Home = ({ theme }) => {
                 {tech}
               </span>
             ))}
-            <a
-              target="_blank"
-              href={website}
-              className="px-2 py-1 text-xs font-medium rounded-md bg-[#0b7763] text-white"
-            >
-              website!
-            </a>
           </div>
+          <a
+            target="_blank"
+            href={website}
+            className="inline-flex justify-center gap-2 px-2 py-1 text-xs font-medium rounded-md bg-[#0b7763] text-white mt-4"
+          >
+            <svg
+              width="16px"
+              height="16px"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 10V18C3 19.1046 3.89543 20 5 20H9M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21M21 10V13"
+                stroke="white"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15 16L13 18L15 20"
+                stroke="white"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19 16L21 18L19 20"
+                stroke="white"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle cx="6" cy="7" r="1" fill="#000000" />
+              <circle cx="9" cy="7" r="1" fill="#000000" />
+            </svg>
+            website!
+          </a>
         </div>
       </div>
     );
