@@ -115,6 +115,7 @@ const Home = ({ theme }) => {
     {
       title: (
         <img
+          loading="lazy"
           src="/marcus-kobe/assets/Books.png"
           alt="gh"
           className="w-12 h-12"
@@ -129,6 +130,7 @@ const Home = ({ theme }) => {
     {
       title: (
         <img
+          loading="lazy"
           src="/marcus-kobe/assets/boost.png"
           alt="gh"
           className="w-12 h-12"
@@ -146,6 +148,7 @@ const Home = ({ theme }) => {
       <section className="flex flex-col p-2 sm:items-start gap-8 md:flex-row md:items-center md:justify-between">
         {/* Image */}
         <img
+          loading="lazy"
           alt="profile"
           width="200"
           height="200"
@@ -158,6 +161,7 @@ const Home = ({ theme }) => {
           <h1 className="text-4xl font-dotoital flex gap-2 text-[#0b7763] items-center justify-center sm:justify-start">
             hi kobe here
             <img
+              loading="lazy"
               src="/marcus-kobe/assets/player.png"
               alt="player"
               className="w-10 h-10"
@@ -192,6 +196,7 @@ const Home = ({ theme }) => {
         <h2 class="title text-2xl sm:text-3xl font-doto text-[#0b7763] flex gap-2">
           <p>experience</p>
           <img
+            loading="lazy"
             src="/marcus-kobe/assets/expshare.png"
             alt="expshare"
             className="w-8 h-8 mt-1"
@@ -228,6 +233,7 @@ const Home = ({ theme }) => {
               {/* Work Item 1 */}
               <div className="flex items-start gap-4 p-4 ">
                 <img
+                  loading="lazy"
                   src="/marcus-kobe/assets/playpath.jpeg"
                   alt="PlayPath"
                   className="w-12 h-12 rounded-lg"
@@ -253,6 +259,7 @@ const Home = ({ theme }) => {
               {/* Work Item 2 */}
               <div className="flex items-start gap-4 p-4">
                 <img
+                  loading="lazy"
                   src="/marcus-kobe/assets/prenostik.jpeg"
                   alt="Prenostik"
                   className="w-12 h-12 rounded-lg"
@@ -296,6 +303,7 @@ const Home = ({ theme }) => {
                   </ul>
                 </div>
                 <img
+                  loading="lazy"
                   src="/marcus-kobe/assets/uci.png"
                   alt="UCI"
                   className="w-12 h-12 rounded-lg"
@@ -311,6 +319,7 @@ const Home = ({ theme }) => {
             <h2 class="title text-2xl sm:text-3xl font-doto font-stretch-ultra-condensed text-[#0b7763] flex gap-2">
               featured projects
               <img
+                loading="lazy"
                 src="/marcus-kobe/assets/projects.png"
                 alt="projects"
                 className="w-8 h-8 mt-2"
@@ -365,6 +374,7 @@ const Home = ({ theme }) => {
         <h2 className="title text-2xl sm:text-3xl font-doto text-[#0b7763] flex gap-2 p-2 p-px">
           tech stack
           <img
+            loading="lazy"
             src="/marcus-kobe/assets/revive.png"
             alt="revive"
             className="w-8 h-8 mt-1"
@@ -378,6 +388,7 @@ const Home = ({ theme }) => {
           >
             <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
+                loading="lazy"
                 src="/marcus-kobe/assets/badges/badge1.png"
                 alt="revive"
                 className=" w-12 h-12"
@@ -386,6 +397,7 @@ const Home = ({ theme }) => {
             </div>
             <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
+                loading="lazy"
                 src="/marcus-kobe/assets/badges/badge2.png"
                 alt="revive"
                 className="w-12 h-12"
@@ -394,6 +406,7 @@ const Home = ({ theme }) => {
             </div>
             <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
+                loading="lazy"
                 src="/marcus-kobe/assets/badges/badge3.png"
                 alt="revive"
                 className="w-12 h-12"
@@ -402,6 +415,7 @@ const Home = ({ theme }) => {
             </div>
             <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
+                loading="lazy"
                 src="/marcus-kobe/assets/badges/badge4.png"
                 alt="revive"
                 className="w-12 h-12"
@@ -410,6 +424,7 @@ const Home = ({ theme }) => {
             </div>
             <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
+                loading="lazy"
                 src="/marcus-kobe/assets/badges/badge5.png"
                 alt="revive"
                 className="w-12 h-12"
@@ -418,6 +433,7 @@ const Home = ({ theme }) => {
             </div>
             <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
+                loading="lazy"
                 src="/marcus-kobe/assets/badges/badge6.png"
                 alt="revive"
                 className="w-12 h-12"
@@ -426,6 +442,7 @@ const Home = ({ theme }) => {
             </div>
             <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
+                loading="lazy"
                 src="/marcus-kobe/assets/badges/badge7.png"
                 alt="revive"
                 className="w-12 h-12"
@@ -434,6 +451,7 @@ const Home = ({ theme }) => {
             </div>
             <div className="flex flex-col items-center hover:scale-[1.1]">
               <img
+                loading="lazy"
                 src="/marcus-kobe/assets/badges/badge8.png"
                 alt="revive"
                 className="w-12 h-12"
