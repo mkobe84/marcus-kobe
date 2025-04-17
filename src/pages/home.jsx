@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Home = ({ theme }) => {
   const [activeTab, setActiveTab] = useState("work"); // Track active tab
+  const [activeMobileCard, setActiveMobileCard] = useState(null);
 
   const ProjectCard = ({
     title,
@@ -12,25 +13,45 @@ const Home = ({ theme }) => {
     description,
     techStack,
     website,
+    activeMobileCard,
+    setActiveMobileCard,
+    index,
   }) => {
+    const isMobile = window.innerWidth <= 768;
+    const isActive = activeMobileCard === index;
+
+    const handleClick = () => {
+      if (isMobile) {
+        setActiveMobileCard(isActive ? null : index);
+      }
+    };
+
     return (
       <div
-        className="relative group w-full h-64 rounded-lg overflow-hidden flex items-center justify-center animate-rotate-border 
-      rounded-lg  hover:scale-[1.03] hover:bg-conic/[from_var(--border-angle)] from-black via-[#0b7763] from-80% via-90% to-100% p-px perspective "
+        onClick={handleClick}
+        className="relative group w-full h-64 rounded-lg overflow-hidden flex items-center justify-center animate-rotate-border hover:scale-[1.03] hover:bg-conic/[from_var(--border-angle)] from-black via-[#0b7763] from-80% via-90% to-100% p-px perspective"
       >
-        {/* Default view: Blank image with title */}
+        {/* Base view: Blank image with title */}
         <div
           className={`${
-            theme === "dark" ? "bg-neutral-900 " : "bg-[#e5e5e5]"
+            theme === "dark" ? "bg-neutral-900" : "bg-[#e5e5e5]"
           } w-full h-full inset-0 flex items-center justify-center rounded-lg p-10 border-black`}
         >
           <span className="text-lg">{title}</span>
         </div>
-        {/* Hover effect: Dark overlay with project details */}
+
+        {/* Overlay for desktop hover or mobile click */}
         <div
           className={`${
-            theme === "dark" ? "bg-neutral-900 " : "bg-[#e5e5e5]"
-          } absolute inset-0 bg-opacity-90 flex flex-col items-center m-1 justify-center opacity-0   group-hover:opacity-100 transition-opacity duration-300 p-4 `}
+            theme === "dark" ? "bg-neutral-900" : "bg-[#e5e5e5]"
+          } absolute inset-0 bg-opacity-90 flex flex-col items-center m-1 justify-center transition-opacity duration-300 p-4
+          ${
+            isMobile
+              ? isActive
+                ? "opacity-100"
+                : "opacity-0"
+              : "opacity-0 group-hover:opacity-100"
+          }`}
         >
           <h3 className="font-bold text-lg font-dotoital text-[#0b7763]">
             {hoverTitle}
@@ -38,10 +59,10 @@ const Home = ({ theme }) => {
           <p className="text-gray-600 text-sm text-center mt-2">
             {description}
           </p>
-          <div className="mt-3 flex flex-wrap justify-center gap-2 ">
-            {techStack.map((tech, index) => (
+          <div className="mt-3 flex flex-wrap justify-center gap-2">
+            {techStack.map((tech, i) => (
               <span
-                key={index}
+                key={i}
                 className="px-2 py-1 text-xs font-medium rounded-md bg-[#333] text-white"
               >
                 {tech}
@@ -266,7 +287,13 @@ const Home = ({ theme }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {" "}
             {proj.map((p, index) => (
-              <ProjectCard key={index} {...p} />
+              <ProjectCard
+                key={index}
+                {...p}
+                index={index}
+                activeMobileCard={activeMobileCard}
+                setActiveMobileCard={setActiveMobileCard}
+              />
             ))}
           </div>
         </section>
