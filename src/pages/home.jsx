@@ -271,23 +271,29 @@ const Home = ({ theme }) => {
           </div>
         </section>
       </div>
-      <div className="flex justify-end hover:text-[#0b7763] ">
+      <div className="flex justify-end">
         <NavLink
-          className="group link flex items-center gap-2 font-light text-black hover:text-[#0b7763]"
+          className="group link flex items-center gap-2 font-light text-black group-hover:text-[#0b7763]"
           to="/marcus-kobe/projects"
         >
-          <span>view more</span>
+          <span
+            className={`group-hover:text-[#0b7763] ${
+              theme === "dark" ? "text-white" : "text-black"
+            }`}
+          >
+            view more
+          </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="black"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
             className="lucide lucide-arrow-right size-5 group-hover:stroke-[#0b7763]"
+            stroke={`${theme === "dark" ? "white" : "black"}`}
           >
             <path d="M5 12h14"></path>
             <path d="m12 5 7 7-7 7"></path>

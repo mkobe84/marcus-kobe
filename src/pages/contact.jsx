@@ -4,7 +4,14 @@ const Contact = ({ theme }) => {
   return (
     <div className="flex justify-between">
       <section className="p-8">
-        <h2 className="text-2xl font-doto text-[#0b7763]">Contact</h2>
+        <h2 className="title text-2xl gap-2 sm:text-3xl font-doto text-[#0b7763] flex mb-8">
+          contact me!
+          <img
+            src="/marcus-kobe/assets/urban-13.png"
+            alt="projects"
+            className="w-8 h-8 mt-2"
+          />
+        </h2>
         <p className="mt-4">Feel free to reach out to me at any time!</p>
         <div className="flex flex-col gap-4 mt-8 transition-colors duration-200 ">
           <a
